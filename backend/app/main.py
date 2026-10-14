@@ -38,3 +38,7 @@ app.include_router(health.router, prefix="/api/v1")
 app.include_router(transactions.router, prefix="/api/v1")
 app.include_router(analytics.router, prefix="/api/v1")
 app.include_router(upload.router, prefix="/api/v1")
+app.include_router(
+    upload.router,
+    prefix="/api/v1/upload"
+)
