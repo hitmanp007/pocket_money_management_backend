@@ -23,8 +23,8 @@ A Python-based backend that processes UPI transaction statements and provides fi
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone https://github.com/hitmanp007/pocket_money_management_backend.git
+
 ```
 
 ### 2. Create and activate a virtual environment
