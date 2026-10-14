@@ -1,7 +1,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from app.api.routes import analytics
 from .api.routes import transactions, analytics, upload
 from .api.routes import health
 
@@ -35,5 +35,5 @@ def root():
 
 app.include_router(health.router, prefix="/api/v1")
 app.include_router(transactions.router, prefix="/api/v1")
-# app.include_router(analytics.router, prefix="/api/v1")
+app.include_router(analytics.router, prefix="/api/v1")
 app.include_router(upload.router, prefix="/api/v1")
