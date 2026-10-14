@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import analytics
 from .api.routes import transactions, analytics, upload
 from .api.routes import health
+from app.api.routes import upload
 
 app = FastAPI(
     title="Pocket Money Management API",
